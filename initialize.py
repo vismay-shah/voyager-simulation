@@ -12,7 +12,7 @@ launch time of Voyager 1, as taken from the JPL Horizons Database.
 '''
 
 def Tconvert(time):
-    t = Time(time, format='jd', scale='tt', out_subfmt='date_hm')
+    t = Time(time, format='jd', scale='tdb', out_subfmt='date_hm')
     return t.iso
 
 def init(time, name):
